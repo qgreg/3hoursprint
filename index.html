@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilligan's Sprint Planning</title>
+    <!-- Google Fonts: Outfit for a modern, clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Abstract Tropical Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <main class="container">
+        <header>
+            <h1>Gilligan's Sprint Planning</h1>
+            <p class="subtitle">Navigate your next sprint with clarity and focus.</p>
+        </header>
+
+        <section class="gallery">
+            <div class="video-container main-video-wrapper">
+                <video id="main-video" controls autoplay muted loop playsinline>
+                    <!-- Fallback if user hasn't downloaded videos yet -->
+                    <source src="assets/videos/GSP-anim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay" id="main-video-title">GSP Animation (Gemini)</div>
+            </div>
+
+            <div class="thumbnail-list">
+                <button class="thumbnail active" data-src="assets/videos/GSP-anim.mp4"
+                    data-title="GSP Animation (Gemini)" aria-label="Play GSP Animation (Gemini)">
+                    <div class="thumb-content">
+                        <span class="play-icon">▶</span>
+                        <span>01 Animation</span>
+                    </div>
+                </button>
+                <button class="thumbnail" data-src="assets/videos/GSP-sit.mp4" data-title="GSP Sit (Sora)"
+                    aria-label="Play GSP Sit (Sora)">
+                    <div class="thumb-content">
+                        <span class="play-icon">▶</span>
+                        <span>02 Sit</span>
+                    </div>
+                </button>
+                <button class="thumbnail" data-src="assets/videos/GSP-sunny.mp4" data-title="GSP Sunny (Sora)"
+                    aria-label="Play GSP Sunny (Sora)">
+                    <div class="thumb-content">
+                        <span class="play-icon">▶</span>
+                        <span>03 Sunny</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
